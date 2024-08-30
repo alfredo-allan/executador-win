@@ -1,0 +1,13 @@
+Digite PowerShell na barra de pesquisa.
+Executar como Administrador:
+
+Clique com o botão direito no ícone do PowerShell nos resultados da pesquisa.
+Selecione Executar como administrador.
+Confirme o controle de conta de usuário (UAC) se solicitado.
+Executar o Comando:
+
+No PowerShell que se abre com privilégios elevados, você pode executar os mesmos comandos administrativos. No caso do PowerShell, os comandos são ligeiramente diferentes para adicionar regras de firewall:
+
+powershell
+Copiar código
+New-NetFirewallRule -DisplayName "Permitir Porta 5000" -Direction Inbound -Protocol TCP -L
